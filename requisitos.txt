@@ -59,6 +59,8 @@ SENHA: Powerfull@1331
 
 ----------------------------------------------------------------------------------
 
+[GIT SOMENTE CLONE]
+
 [VAI PRECISAR ADICIONAR O IP DO TESTER NO AZURE NO SERVIDOR]
 
 [SE CAIR A CONEXÃO DO ANYDESK NO CASO, VAI QUEBRAR A CONEXÃO NO BD DO SITE TAMBEM]

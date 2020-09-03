@@ -1,7 +1,6 @@
 <!--#Include File="../../Desafio/conexao/conexao.asp"-->
 <%
     
-
     dim Conexao
 	call openDB()
 	

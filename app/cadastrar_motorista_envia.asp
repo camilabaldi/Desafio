@@ -2,7 +2,6 @@
 
 <%
     
-
     dim Conexao
 	call openDB()
 	

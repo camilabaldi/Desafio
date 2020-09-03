@@ -4,8 +4,6 @@
 <%
 	
 	dim Conexao, Rs
-	'Dados enviados
-	'id = Request("ID")
 	
 	'Abre conexão
 	call openDb()
@@ -18,6 +16,7 @@
 	SQL_Query = SQL_Query & "on c.idPassa = p.idPass"
 	
 	'response.write(SQL_Query)
+	
     'Executando string SQL_Query
 	Set Rs = Conexao.Execute(SQL_Query)
 	Response.Write((new JSON).toJSON("json", Rs, false))

@@ -31,7 +31,7 @@
 			
 		});
 		
-		
+		//somente numeros
         function onlynumber(evt) {
 		   var theEvent = evt || window.event;
 		   var key = theEvent.keyCode || theEvent.which;
@@ -43,10 +43,6 @@
 		   }
 		   
 		}
-		
-		/*function ValidaCadastro(form) {
-			alert("Processando solicitação, clique em OK para continuar");
-		}*/
 		
 	</script>
     <header>
@@ -65,7 +61,6 @@
 		<hr class="featurette-divider">
       </div><!-- /.container -->
 	  <div class="container"><!-- container form -->
-	<!--<form id="FrmVenda" action="cadastrar_corrida_envia.asp" method="post" class="form-horizontal" onsubmit="return ValidaCadastro(this);" >-->
 		<form id="FrmVenda" action="cadastrar_passageiro_envia.asp" method="post" class="form-horizontal" >
 			<article class="content">
 				<div class="box-body">

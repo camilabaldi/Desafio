@@ -19,7 +19,7 @@
 	<script type="text/javascript">
 		$(function () {
 		
-			//Exibição de corridas
+			//Exibição de motoristas
 			$.ajax({
 				url: '../busca/busca_motoristas.asp',
 				type: 'POST',

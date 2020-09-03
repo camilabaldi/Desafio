@@ -65,7 +65,6 @@
         <div class="row justify-content-start">
           <div class="col-md-12 text-center">
             <h2 class="featurette-heading">Passageiros</h2>
-			<button type="button" class="btn btn-teste" hidden >Teste</button> <!--colocar hidden-->
 			<input type="text" name="id" id="id" value="" class="form-control"  hidden />
           </div>
         </div>

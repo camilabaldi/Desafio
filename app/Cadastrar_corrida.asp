@@ -29,7 +29,7 @@
 				$('#buscaPassageiro').load('../busca/busca_passageiro.asp');
 				
 			
-			//Setar como 0, caso o campo fique vazio, assim não aparece 'NAN' ou da erro posteriormente
+			//Setar como 0, caso o campo fique vazio, assim não aparece 'NAN' ou algum erro posteriormente
 			$('.dinheiro').mask('000000000.00', {reverse: true});
 			$('.dinheiro').blur(function(){
 				if ($(this).val() == '')
@@ -38,7 +38,7 @@
 			
 		});
 		
-		
+		//somente numeros
         function onlynumber(evt) {
 		   var theEvent = evt || window.event;
 		   var key = theEvent.keyCode || theEvent.which;
@@ -50,10 +50,6 @@
 		   }
 		   
 		}
-		
-		/*function ValidaCadastro(form) {
-			alert("Processando solicitação, clique em OK para continuar");
-		}*/
 		
 	</script>
     <header>
@@ -72,7 +68,6 @@
 		<hr class="featurette-divider">
       </div><!-- /.container -->
 	  <div class="container"><!-- container form -->
-	<!--<form id="FrmVenda" action="cadastrar_corrida_envia.asp" method="post" class="form-horizontal" onsubmit="return ValidaCadastro(this);" >-->
 		<form id="FrmVenda" action="cadastrar_corrida_envia.asp" method="post" class="form-horizontal" >
 			<article class="content">
 				<div class="box-body">
