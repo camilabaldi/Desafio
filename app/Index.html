@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <style type="text/css">
+	.reaj{
+		opacity: 1;
+	    display: block;
+	    transition: .5s ease;
+	    backface-visibility: hidden;
+	}
+	
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+	.cont:hover .image {
+	  opacity: 0.3;
+	}
+
+	.cont:hover .middle {
+	  opacity: 1;
+	}
+
+	.text {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  color: white;
+	  font-size: 24px;
+	  padding: 16px 32px;
+	}
+	
+	#cor{
+		background-color:rgb(247, 244, 188);
+	}
+	
+	#mot{
+		background-color:#b3ffe0;
+	}
+	
+	#pas{
+		background-color:#b3ccff;
+	}
+  </style>
+  <body>
+    <header>
+		  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="Index.html" role="button"  aria-haspopup="true" aria-expanded="false">
+				  Home
+				</a>
+			</li>
+            <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Corridas
+				</a>
+				<div class="dropdown-menu" id="cor" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="Cadastrar_corrida.asp">Cadastrar</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item oi" href="Visualizar_corrida.asp">Visualizar</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Motoristas
+				</a>
+				<div class="dropdown-menu" id="mot" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="Cadastrar_motorista.asp">Cadastrar</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="Visualizar_motorista.asp">Visualizar</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Passageiros
+				</a>
+				<div class="dropdown-menu" id="pas" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="Cadastrar_passageiro.asp">Cadastrar</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="Visualizar_passageiro.asp">Visualizar</a>
+				</div>
+			</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+		<div class="cont">
+		  <img src="https://external-preview.redd.it/ydodW0omIWIezkbzvcZP-DlMxb0Se1kZFZAxyplmsrg.jpg?auto=webp&s=08e369fa38f0c06b96b0d32e54f3d089e0443eb3" alt="img">
+		  <div class="middle">
+			<div class="text">Navegue pelo menu acima</div>
+		  </div>
+		</div>
+	<hr>
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>© Camila Baldi, 2020 </p>
+      </footer>
+    </main>
+  </body>
+</html>

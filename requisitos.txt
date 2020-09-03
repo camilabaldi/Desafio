@@ -1,0 +1,64 @@
+CADASTRO MOTORISTA-------
+
+-required-
+	nome
+	dtNiv (plug calendario)
+	cpf ( mascara)
+	carModel
+	status(ativo ou inativo)
+	sexo
+
+-onsubmit ok-
+	alerta(motorista cadastrado com sucesso)
+
+-consulta-
+	inclui todos status
+	[ações](alterar status)
+
+
+CADASTRO PASSAGEIRO----
+
+-required-
+	nome
+	dtNiv
+	cpf
+	sexo
+
+-onsubmit ok-
+	alerta(passageiro cadastrado com sucesso)
+
+-consulta-
+	inclui todos status
+
+
+CADASTRO CORRIDA---------
+
+-required-
+	nomeMoto(somente ativos)
+	nomePass
+	valor [make class dinheiro mask]
+
+-onsubmit ok-
+	alerta(corrida cadastrada com sucesso)
+
+-consulta-
+[buscar pelos nomes ao inves do ID - Visualizar_corrida]	
+
+-------------------- CONNECTION AZURE------------------------------
+
+email: zuzumebachisilver@gmail.com
+senha: camilateste2020
+
+SERVIDOR:
+
+serverexpressrace.database.windows.net
+
+NOME: serverexpressrace
+USUARIO: camila_teste
+SENHA: Powerfull@1331
+
+----------------------------------------------------------------------------------
+
+[VAI PRECISAR ADICIONAR O IP DO TESTER NO AZURE NO SERVIDOR]
+
+[SE CAIR A CONEXÃO DO ANYDESK NO CASO, VAI QUEBRAR A CONEXÃO NO BD DO SITE TAMBEM]
